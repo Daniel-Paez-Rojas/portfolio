@@ -1,0 +1,10 @@
+.navbar {
+    text-align: center; // Asegura que todo el texto esté centrado
+  }
+
+  .navbar-nav{
+    display: flex;
+    justify-content: center; // Centra horizontalmente los enlaces
+    width: 100%; // Asegura que ocupa todo el contenedor
+  }
+  
