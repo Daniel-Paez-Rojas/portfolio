@@ -1,4 +1,3 @@
-import '../styles/navbar.scss';
 import React from "react";
 import Container from "react-bootstrap/Container";
 import Navbar from "react-bootstrap/Navbar";
@@ -6,8 +5,8 @@ import Nav from "react-bootstrap/Nav";
 
 function MainNavbar() {
   return (
-    <Navbar collapseOnSelect expand="md" className="navbar">
-      <Container id='navbar-contenedor'>
+    <Navbar fixed="top" collapseOnSelect expand="md" className="navbar shadow">
+      <Container fluid>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="me-auto">

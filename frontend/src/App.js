@@ -17,6 +17,7 @@ function App() {
         <Route path="/portfolio" element={<Portfolio />} />
         <Route path="/experience" element={<Experience />} />
         <Route path="/contact" element={<ContactMe />} />
+        <Route path="*" element={<h1>404 Not Found</h1>}></Route>
       </Routes>
     </Router>
   );
