@@ -1,8 +1,12 @@
+.active-link {
+  color: #5532ed;
+  font-weight: bold;
+}
+
 .navbar {
   text-align: center;
 }
-
-.navbar-nav {
+.navbar .navbar-nav {
   display: flex;
   justify-content: center;
   width: 100%;
