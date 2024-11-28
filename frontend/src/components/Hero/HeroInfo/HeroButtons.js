@@ -1,18 +1,19 @@
 import React from "react";
+import Button from "react-bootstrap/Button";
 
 const HeroButtons = () => {
   return (
-    <div className="hero__buttons">
-      <a 
-        href="https://drive.google.com/uc?export=download&id=1dxxD5FLRdKxJAUfGSIf4S4CUxWG6VHKQ" 
-        download 
-        className="btn btn-outline-secondary me-3"
-      >
+    <div className="hero__buttons d-flex justify-content-center mb-3">
+      <Button download variant="outline-dark" className="me-3 rounded-pill">
         Download CV
-      </a>
-      <a href="#contact" className="btn btn-secondary text-light">
+      </Button>
+      <Button
+        href="#contact"
+        className="me-3 rounded-pill text-light"
+        variant="dark"
+      >
         Contact Info
-      </a>
+      </Button>
     </div>
   );
 };

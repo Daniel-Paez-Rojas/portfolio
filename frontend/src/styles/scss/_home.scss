@@ -1,0 +1,43 @@
+@import "variables.scss";
+
+#home-row {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+
+  div{
+    padding: 0;
+  }
+
+  #profession {
+    color: $primary-colour;
+  }
+
+  #hero-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+
+    .col {
+      background-color: #f8f9fa;
+      border: 1px solid #ddd;
+    }
+  }
+}
+
+.hero-image {
+  width: clamp(150px, 33vw, 400px);
+  aspect-ratio: 1 / 1;
+  object-fit: cover; 
+}
+
+
+#home-row > .col {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: stretch;
+}

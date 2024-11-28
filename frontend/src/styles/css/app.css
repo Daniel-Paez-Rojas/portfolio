@@ -5,6 +5,7 @@
 
 .navbar {
   text-align: center;
+  z-index: 10;
 }
 .navbar .navbar-nav {
   display: flex;
@@ -13,5 +14,39 @@
 }
 
 #home-row {
-  min-height: 100vh;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+}
+#home-row div {
+  padding: 0;
+}
+#home-row #profession {
+  color: #5532ed;
+}
+#home-row #hero-info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+}
+#home-row #hero-info .col {
+  background-color: #f8f9fa;
+  border: 1px solid #ddd;
+}
+
+.hero-image {
+  width: clamp(150px, 33vw, 400px);
+  aspect-ratio: 1/1;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+#home-row > .col {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: stretch;
 }

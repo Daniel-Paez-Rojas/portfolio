@@ -1,18 +1,30 @@
-import React from 'react';
-import HeroImage from '../components/Hero/HeroImage';
-import HeroInfo from '../components/Hero/HeroInfo';
-import { Row, Col } from 'react-bootstrap';
+import React from "react";
+import HeroImage from "../components/Hero/HeroImage";
+import HeroInfo from "../components/Hero/HeroInfo";
+import MainNavbar from "../components/Navbar";
+import { Row, Col, Stack } from "react-bootstrap";
 
 const Home = () => {
   return (
-      <Row className="align-items-center" id="home-row">
-        <Col md={6}>
+    <Stack gap={5}>
+      <MainNavbar />
+      <Row id="home-row" className="h-100 align-items-stretch">
+        <Col
+          sm={12}
+          md={6}
+          className="d-flex justify-content-center align-items-center p-0"
+        >
           <HeroImage />
         </Col>
-        <Col md={6}>
+        <Col
+          sm={12}
+          md={6}
+          id="hero-info"
+        >
           <HeroInfo />
         </Col>
       </Row>
+    </Stack>
   );
 };
 

@@ -1,7 +1,6 @@
-import React from "react";
+import React, { useState } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import {Container} from "react-bootstrap";
-import MainNavbar from "./components/Navbar";
+import { Container, Stack } from "react-bootstrap";
 import Home from "./pages/Home";
 import AboutMe from "./pages/AboutMe";
 import Portfolio from "./pages/Portfolio";
@@ -16,17 +15,18 @@ import ContactMe from "./pages/ContactMe";
 function App() {
   return (
     <Router>
-      <MainNavbar />
-      <Container>
-        <Routes>
-          <Route path="/" exact element={<Home />} />
-          <Route path="/about" element={<AboutMe />} />
-          <Route path="/portfolio" element={<Portfolio />} />
-          <Route path="/experience" element={<Experience />} />
-          <Route path="/contact" element={<ContactMe />} />
-          <Route path="*" element={<h1>404 Not Found</h1>} />
-        </Routes>
-      </Container>
+      <Stack gap={5}>
+        <Container className="p-3">
+          <Routes>
+            <Route path="/" exact element={<Home />} />
+            <Route path="/about" element={<AboutMe />} />
+            <Route path="/portfolio" element={<Portfolio />} />
+            <Route path="/experience" element={<Experience />} />
+            <Route path="/contact" element={<ContactMe />} />
+            <Route path="*" element={<h1>404 Not Found</h1>} />
+          </Routes>
+        </Container>
+      </Stack>
     </Router>
   );
 }

@@ -1,16 +1,17 @@
 import React from 'react';
+import Row from 'react-bootstrap/Row';
 
 const HeroText = () => {
   return (
-    <>
+    <Row className="justify-content-center text-center">
         <p>Hello I'm</p>
         <h1>Daniel Andrés Páez Rojas</h1>
-        <p>Web Developer</p>
+        <p className="fs-2" id='profession'>Web Developer</p>
         <p>Passionate about web development and
         web design, I define myself for being
         a person with a great desire to learn
         to learn and to work</p>
-    </>
+    </Row>
   );
 };
 

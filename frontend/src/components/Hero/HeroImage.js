@@ -1,9 +1,16 @@
-import React from 'react';
-import heroImage from '../../assets/images/CV_Imagen.jpg';
+import React from "react";
+import heroImage from "../../assets/images/CV_Imagen.jpg";
+import Image from "react-bootstrap/Image";
 
 const HeroImage = () => {
   return (
-    <img src={heroImage} alt="Foto de Daniel Andrés Páez Rojas" title="Foto de Daniel Andrés Páez Rojas" />
+    <Image
+      src={heroImage}
+      alt="Foto de Daniel Andrés Páez Rojas"
+      title="Foto de Daniel Andrés Páez Rojas"
+      roundedCircle
+      className="hero-image"
+    />
   );
 };
 
