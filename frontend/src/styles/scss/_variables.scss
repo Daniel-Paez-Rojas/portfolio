@@ -1,5 +1,11 @@
 // Colours
-$primary-colour: #5532ed;
+$colour-primary: #5532ed;
+$colour-background: #fbfafb;
 
 // Fonts
-$font-primary: 'Poppins', sans-serif;
+$font-primary: "Poppins", sans-serif;
+
+// z index
+$z-tooltip: 10;
+$z-fixed: 100;
+$z-modal: 1000;

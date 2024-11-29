@@ -6,11 +6,13 @@ import { Stack } from "react-bootstrap";
 
 function About() {
   return (
-    <Stack className="vh-100" id="about">
-      <AboutHeading />
-      <AboutImage />
-      <AboutInfo />
-    </Stack>
+    <section id="about">
+      <Stack className="vh-100" id="about">
+        <AboutHeading />
+        <AboutImage />
+        <AboutInfo />
+      </Stack>
+    </section>
   );
 }
 

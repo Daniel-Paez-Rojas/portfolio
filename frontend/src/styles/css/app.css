@@ -1,4 +1,15 @@
-body, button, input, textarea {
+body {
+  background-color: #fbfafb;
+}
+
+a {
+  text-decoration: none;
+}
+
+body,
+button,
+input,
+textarea {
   font-family: "Poppins", sans-serif;
 }
 
@@ -7,14 +18,16 @@ body, button, input, textarea {
   font-weight: bold;
 }
 
-.navbar {
-  text-align: center;
-  z-index: 10;
-}
-.navbar .navbar-nav {
-  display: flex;
-  justify-content: center;
+header {
   width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+}
+header .responsive-navbar-nav {
+  display: flex;
+  justify-content: flex-end;
 }
 
 #home {

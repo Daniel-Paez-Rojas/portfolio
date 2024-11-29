@@ -3,22 +3,27 @@ import { Container, Stack } from "react-bootstrap";
 import MainNavbar from "./components/Navbar";
 import Home from "./pages/Home";
 import About from "./pages/About";
+import useActiveSection from "./hooks/useActiveSection";
 
 function App() {
-  const handleScrollToSection = (event) => {
-    const targetId = event.target.getAttribute("href").substring(1);
-    const targetElement = document.getElementById(targetId);
-    if (targetElement) {
-      targetElement.scrollIntoView({ behavior: "smooth" });
-    }
-  };
+  const sections = [
+    "home",
+    "about",
+    "qualification",
+    "portfolio",
+    "skills",
+    "contact"
+  ];
+  const activeSection = useActiveSection(sections);
 
   return (
     <Stack gap={5}>
       <Container className="p-3">
-        <MainNavbar handleScroll={handleScrollToSection} />
-        <Home />
-        <About />
+        <MainNavbar activeSection={activeSection} />
+        <main>
+          <Home />
+          <About />
+        </main>
       </Container>
     </Stack>
   );

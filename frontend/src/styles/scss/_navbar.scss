@@ -1,10 +1,14 @@
-.navbar {
-  text-align: center;
-  z-index: 10;
+@import "variables.scss";
 
-  .navbar-nav {
+header {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: $z-fixed;
+
+  .responsive-navbar-nav {
     display: flex;
-    justify-content: center;
-    width: 100%;
+    justify-content: flex-end;
   }
 }

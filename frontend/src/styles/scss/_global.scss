@@ -1,8 +1,19 @@
-body, button, input, textarea{
+body {
+  background-color: $colour-background;
+}
+
+a {
+  text-decoration: none;
+}
+
+body,
+button,
+input,
+textarea {
   font-family: $font-primary;
 }
 
 .active-link {
-  color: $primary-colour;
+  color: $colour-primary;
   font-weight: bold;
 }
