@@ -1,27 +1,29 @@
 import React from "react";
-import HeroImage from "../components/Hero/HeroImage";
-import HeroInfo from "../components/Hero/HeroInfo";
-import MainNavbar from "../components/Navbar";
+import HomeImage from "../components/Home/HomeImage";
+import HomeInfo from "../components/Home/HomeInfo";
 import { Row, Col, Stack } from "react-bootstrap";
 
 const Home = () => {
   return (
-    <Stack className="vh-100">
-      <MainNavbar />
-      <Row id="home-row" className="vh-100 flex-column flex-lg-row align-items-stretch g-4 p-0 m-5">
+    <Stack className="vh-100 d-flex justify-content-center align-items-center">
+      <Row
+        id="home"
+        className="d-flex flex-column flex-lg-row align-items-stretch g-4 p-0 m-5 w-100"
+      >
         <Col
           sm={12}
           lg={6}
           className="d-flex justify-content-center align-items-center"
         >
-          <HeroImage />
+          <HomeImage />
         </Col>
         <Col
           sm={12}
           lg={6}
           id="hero-info"
+          className="d-flex flex-column justify-content-center align-items-center"
         >
-          <HeroInfo />
+          <HomeInfo />
         </Col>
       </Row>
     </Stack>
