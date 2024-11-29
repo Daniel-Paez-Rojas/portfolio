@@ -6,8 +6,8 @@ const HeroImage = () => {
   return (
     <Image
       src={heroImage}
-      alt="Foto de Daniel Andrés Páez Rojas"
-      title="Foto de Daniel Andrés Páez Rojas"
+      alt="Image of Daniel Andrés Páez Rojas"
+      title="Image of Daniel Andrés Páez Rojas"
       roundedCircle
       className="hero-image"
     />

@@ -38,7 +38,7 @@
 }
 
 .hero-image {
-  width: clamp(150px, 33vw, 400px);
+  width: clamp(250px, 33vw, 400px);
   aspect-ratio: 1/1;
   -o-object-fit: cover;
      object-fit: cover;

@@ -14,6 +14,10 @@ const HeroSocialLinks = () => {
     }
   ];
 
+  const getIconTitle = (icon) => {
+    return icon.iconName.charAt(0).toUpperCase() + icon.iconName.slice(1);
+  }
+
   return (
     <div id="hero__social-links" className="d-flex justify-content-center">
       {socialLinks.map((link, index) =>
@@ -27,6 +31,7 @@ const HeroSocialLinks = () => {
           <FontAwesomeIcon
             icon={link.icon}
             className="me-3 fa-circle text-dark fa-2x"
+            title={`Go to ${getIconTitle(link.icon)}`}
           />
         </a>
       )}
