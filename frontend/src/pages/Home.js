@@ -8,7 +8,7 @@ const Home = () => {
   return (
     <Stack gap={5}>
       <MainNavbar />
-      <Row id="home-row" className="h-100 align-items-stretch">
+      <Row id="home-row" className="vh-100 align-items-stretch">
         <Col
           sm={12}
           md={6}
