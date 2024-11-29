@@ -1,35 +1,26 @@
 import React from "react";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { Container, Stack } from "react-bootstrap";
+import MainNavbar from "./components/Navbar";
 import Home from "./pages/Home";
 import About from "./pages/About";
-import Qualification from "./pages/Qualification";
-import Portfolio from "./pages/Portfolio";
-import Skills from "./pages/Skills";
-import Contact from "./pages/Contact";
-
-/* TODO:
-* RAMA: Hacer página 404
-* RAMA: Hero Section
-*/
 
 function App() {
+  const handleScrollToSection = (event) => {
+    const targetId = event.target.getAttribute("href").substring(1);
+    const targetElement = document.getElementById(targetId);
+    if (targetElement) {
+      targetElement.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   return (
-    <Router>
-      <Stack gap={5}>
-        <Container className="p-3">
-          <Routes>
-            <Route path="/" exact element={<Home />} />
-            <Route path="/about" element={<About />} />
-            <Route path="/qualification" element={<Qualification />} />
-            <Route path="/portfolio" element={<Portfolio />} />
-            <Route path="/skills" element={<Skills />} />
-            <Route path="/contact" element={<Contact />} />
-            <Route path="*" element={<h1>404 Not Found</h1>} />
-          </Routes>
-        </Container>
-      </Stack>
-    </Router>
+    <Stack gap={5}>
+      <Container className="p-3">
+        <MainNavbar handleScroll={handleScrollToSection} />
+        <Home />
+        <About />
+      </Container>
+    </Stack>
   );
 }
 

@@ -3,7 +3,7 @@ import Row from 'react-bootstrap/Row';
 
 const HeroText = () => {
   return (
-    <Row className="justify-content-center text-center">
+    <Row className="d-flex justify-content-center align-items-center align-content-center text-center">
         <h1>Daniel Andrés Páez Rojas</h1>
         <p className="fs-2" id='profession'>Web Developer</p>
         <p>Passionate about web development and
