@@ -1,3 +1,7 @@
+body, button, input, textarea{
+  font-family: $font-primary;
+}
+
 .active-link {
   color: $primary-colour;
   font-weight: bold;
