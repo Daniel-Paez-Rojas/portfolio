@@ -1,11 +1,12 @@
-import React, { useState } from "react";
+import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { Container, Stack } from "react-bootstrap";
 import Home from "./pages/Home";
-import AboutMe from "./pages/AboutMe";
+import About from "./pages/About";
+import Qualification from "./pages/Qualification";
 import Portfolio from "./pages/Portfolio";
-import Experience from "./pages/Experience";
-import ContactMe from "./pages/ContactMe";
+import Skills from "./pages/Skills";
+import Contact from "./pages/Contact";
 
 /* TODO:
 * RAMA: Hacer página 404
@@ -19,10 +20,11 @@ function App() {
         <Container className="p-3">
           <Routes>
             <Route path="/" exact element={<Home />} />
-            <Route path="/about" element={<AboutMe />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/qualification" element={<Qualification />} />
             <Route path="/portfolio" element={<Portfolio />} />
-            <Route path="/experience" element={<Experience />} />
-            <Route path="/contact" element={<ContactMe />} />
+            <Route path="/skills" element={<Skills />} />
+            <Route path="/contact" element={<Contact />} />
             <Route path="*" element={<h1>404 Not Found</h1>} />
           </Routes>
         </Container>
