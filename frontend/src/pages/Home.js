@@ -5,17 +5,17 @@ import { Row, Col, Stack } from "react-bootstrap";
 
 const Home = () => {
   return (
-    <section id="home">
-      <Stack className="vh-100 d-flex justify-content-center align-items-center">
-        <Row
-          className="d-flex flex-column flex-lg-row align-items-stretch g-4 p-0 m-5 w-100"
-        >
+    <article id="home">
+      <Stack className="d-flex justify-content-center align-items-center">
+        <Row className="d-flex flex-column flex-lg-row align-items-stretch g-4 p-0 m-5 w-100">
           <Col
             sm={12}
             lg={6}
             className="d-flex justify-content-center align-items-center"
           >
-            <HomeImage />
+            <section>
+              <HomeImage />
+            </section>
           </Col>
           <Col
             sm={12}
@@ -23,11 +23,13 @@ const Home = () => {
             id="hero-info"
             className="d-flex flex-column justify-content-center align-items-center"
           >
-            <HomeInfo />
+            <section>
+              <HomeInfo />
+            </section>
           </Col>
         </Row>
       </Stack>
-    </section>
+    </article>
   );
 };
 

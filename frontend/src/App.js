@@ -18,7 +18,7 @@ function App() {
 
   return (
     <Stack gap={5}>
-      <Container className="p-3">
+      <Container>
         <MainNavbar activeSection={activeSection} />
         <main>
           <Home />
