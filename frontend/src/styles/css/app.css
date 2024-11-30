@@ -5,11 +5,18 @@ html {
 html body {
   background-color: rgb(251, 250, 251);
   color: black;
+  /*.button--flex{
+    display: inline-flex;
+    align-items: center;
+  }*/
 }
 html body h1,
 html body h2 {
   color: hsl(0, 0%, 20%);
   font-weight: 600;
+}
+html body h2 {
+  font-size: 2.75rem;
 }
 html body h3 {
   font-weight: 500;
@@ -32,6 +39,22 @@ html body button {
   cursor: pointer;
   border: none;
   outline: none;
+  display: inline-block;
+  background-color: hsl(0, 0%, 20%);
+  color: rgb(251, 250, 251);
+  padding: 1.25rem 2rem;
+  border-radius: 1rem;
+  -webkit-border-radius: 1rem;
+  -moz-border-radius: 1rem;
+  -ms-border-radius: 1rem;
+  -o-border-radius: 1rem;
+  font-weight: 500;
+}
+html body button:hover {
+  background-color: hsl(0, 0%, 0%);
+}
+html body .button__icon {
+  margin-left: 0.5rem;
 }
 html body img {
   max-width: 100%;
@@ -120,4 +143,12 @@ header .navbar .navbar-collapse .navbar-nav {
   flex-direction: column;
   justify-content: center;
   align-items: stretch;
+}
+
+#about #about__image {
+  border-radius: 5%;
+  -webkit-border-radius: 5%;
+  -moz-border-radius: 5%;
+  -ms-border-radius: 5%;
+  -o-border-radius: 5%;
 }
