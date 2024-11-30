@@ -1,8 +1,10 @@
+@charset "UTF-8";
 body {
-  background-color: #fbfafb;
+  background-color: rgb(251, 250, 251);
 }
 
 a {
+  color: black;
   text-decoration: none;
 }
 
@@ -14,20 +16,26 @@ textarea {
 }
 
 .active-link {
-  color: #5532ed;
+  color: rgb(85, 50, 237);
   font-weight: bold;
 }
 
 header {
+  display: block;
   width: 100%;
   position: fixed;
   top: 0;
   left: 0;
   z-index: 100;
 }
-header .responsive-navbar-nav {
-  display: flex;
+header .navbar {
+  background-color: rgb(251, 250, 251); /* Ajusta el color de fondo según sea necesario */
+}
+header .navbar .navbar-collapse {
   justify-content: flex-end;
+}
+header .navbar .navbar-collapse .navbar-nav {
+  text-align: center;
 }
 
 #home {
@@ -40,7 +48,7 @@ header .responsive-navbar-nav {
   padding: 0;
 }
 #home #profession {
-  color: #5532ed;
+  color: rgb(85, 50, 237);
 }
 #home #hero-info {
   display: flex;

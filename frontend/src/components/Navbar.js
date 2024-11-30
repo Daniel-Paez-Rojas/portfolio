@@ -11,7 +11,7 @@ function MainNavbar({ activeSection }) {
           <a href="#home">Daniel Páez</a>
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
           <Navbar.Collapse id="responsive-navbar-nav">
-            <Nav className="me-auto">
+            <Nav>
               <Nav.Link
                 href="#home"
                 className={activeSection === "home" ? "active-link" : ""}

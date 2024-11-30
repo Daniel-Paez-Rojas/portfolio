@@ -1,14 +1,20 @@
 @import "variables.scss";
 
 header {
+  display: block;
   width: 100%;
   position: fixed;
   top: 0;
   left: 0;
   z-index: $z-fixed;
 
-  .responsive-navbar-nav {
-    display: flex;
-    justify-content: flex-end;
+  .navbar {
+    background-color: $colour-background; /* Ajusta el color de fondo según sea necesario */
+    .navbar-collapse {
+      justify-content: flex-end;
+      .navbar-nav {
+        text-align: center;
+      }
+    }
   }
 }
