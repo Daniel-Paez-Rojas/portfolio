@@ -1,22 +1,43 @@
 import React from "react";
+import Card from "../../Card";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-
+import {
+  faBriefcase,
+  faProjectDiagram,
+  faLifeRing
+} from "@fortawesome/free-solid-svg-icons";
 
 function AboutInfoCards() {
-  /*const icons = [
+  const cards = [
     {
-      href: "https://www.linkedin.com/in/daniel-andres-paez-rojas",
-      icon: faLinkedin
+      icon: <FontAwesomeIcon icon={faProjectDiagram} />,
+      text: "Experience",
+      subtext: "None yet"
     },
     {
-      href: "https://github.com/Daniel-Paez-Rojas",
-      icon: faGithub
+      icon: <FontAwesomeIcon icon={faBriefcase} />,
+      text: "Projects",
+      subtext: "1 project"
+    },
+    {
+      icon: <FontAwesomeIcon icon={faLifeRing} />,
+      text: "Support",
+      subtext: "Coming soon"
     }
-  ];*/
+  ];
 
-  <FontAwesomeIcon icon="fa-light fa-briefcase" />
-  return(
-    <p></p>
+  return (
+    <div id="about-info-cards">
+      {cards.map((card, index) =>
+        <Card
+          key={index}
+          icon={card.icon}
+          text={card.text}
+          subtext={card.subtext}
+          className="my-custom-card"
+        />
+      )}
+    </div>
   );
 }
 

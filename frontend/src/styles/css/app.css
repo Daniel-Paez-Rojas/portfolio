@@ -42,7 +42,7 @@ html body button {
   display: inline-block;
   background-color: hsl(0, 0%, 20%);
   color: rgb(251, 250, 251);
-  padding: 1.25rem 2rem;
+  padding: 0.75rem 1rem;
   border-radius: 1rem;
   -webkit-border-radius: 1rem;
   -moz-border-radius: 1rem;
@@ -89,6 +89,32 @@ html input,
 html textarea {
   font-family: "Poppins", sans-serif;
   font-size: 400;
+}
+
+.custom-card {
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+.custom-card .card-icon {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: black;
+}
+.custom-card .card-text {
+  font-size: 1.25rem;
+  color: black;
+  margin: 0.5rem 0;
+  font-weight: bold;
+}
+.custom-card .card-subtext {
+  font-size: 1rem;
 }
 
 header {
@@ -145,10 +171,46 @@ header .navbar .navbar-collapse .navbar-nav {
   align-items: stretch;
 }
 
-#about #about__image {
+#about .vstack {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: 1fr;
+}
+@media (min-width: 992px) {
+  #about .vstack {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+#about .vstack #about__image {
+  height: 100%;
+  aspect-ratio: 1/1;
+  -o-object-fit: cover;
+     object-fit: cover;
+  display: flex;
+  justify-self: center;
   border-radius: 5%;
   -webkit-border-radius: 5%;
   -moz-border-radius: 5%;
   -ms-border-radius: 5%;
   -o-border-radius: 5%;
+}
+#about .vstack #about-info {
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: 1fr;
+}
+@media (min-width: 992px) {
+  #about .vstack #about-info {
+    grid-template-rows: 1fr;
+  }
+}
+#about .vstack #about-info #about-info-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+@media (max-width: 992px) {
+  #about .vstack #about-info #about-info-text {
+    text-align: center;
+  }
 }

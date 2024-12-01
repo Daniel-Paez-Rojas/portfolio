@@ -1,16 +1,17 @@
 import React from "react";
-import AboutInfoCards from "./AboutInfo/AboutInfoCards"
-import AboutInfoText from "./AboutInfo/AboutInfoText"
-import AboutInfoButton from "./AboutInfo/AboutInfoButton"
+import Stack from 'react-bootstrap/Stack';
+import AboutInfoCards from "./AboutInfo/AboutInfoCards";
+import AboutInfoText from "./AboutInfo/AboutInfoText";
+import AboutInfoButton from "./AboutInfo/AboutInfoButton";
 
 function AboutInfo() {
-    return (
-        <>
-        <AboutInfoCards />
-        <AboutInfoText />
-        <AboutInfoButton />
-        </>
-    );
+  return (
+    <Stack id="about-info">
+      <AboutInfoCards />
+      <AboutInfoText />
+      <AboutInfoButton />
+    </Stack>
+  );
 }
 
 export default AboutInfo;
