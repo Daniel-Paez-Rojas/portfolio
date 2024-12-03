@@ -10,12 +10,33 @@ html {
       font-weight: $font-semi-bold;
     }
 
+    h1 {
+      @media (max-width: 768px) {
+        font-size: $font-size-h1;
+      }
+    }
+
     h2 {
       font-size: $font-size-big;
+
+      @media (max-width: 768px) {
+        font-size: $font-size-h2;
+      }
     }
 
     h3 {
       font-weight: $font-medium;
+
+      @media (max-width: 768px) {
+        font-size: $font-size-h3;
+      }
+    }
+
+    p,
+    span {
+      @media (max-width: 768px) {
+        font-size: $font-size-normal;
+      }
     }
 
     a {
@@ -43,6 +64,8 @@ html {
       background-color: $title-colour;
       color: $colour-background;
       padding: ($size * 0.75) ($size);
+      width: auto;
+      height: fit-content;
       border-radius: $size;
       -webkit-border-radius: $size;
       -moz-border-radius: $size;
@@ -50,12 +73,12 @@ html {
       -o-border-radius: $size;
       font-weight: $font-medium;
 
-      &:hover{
-          background-color: $title-colour-dark;
+      &:hover {
+        background-color: $title-colour-dark;
       }
     }
 
-    .button__icon{
+    .button__icon {
       margin-left: calc($size * 0.5);
     }
 
@@ -67,25 +90,29 @@ html {
     img {
       max-width: 100%;
       height: auto;
+      width: clamp(250px, 33vw, 400px);
     }
 
     article {
       height: 100vh;
       /// padding: 6rem 0 2rem;
 
-      .section__title {
-        //font-size: $h1-font-size;
-        color: $title-colour;
-      }
-
-      .section__subtitle {
-        display: block;
-        // font-size: ;
-        margin-bottom: calc($size * 4);
-      }
-
       .section__heading {
         text-align: center;
+
+        margin-bottom: calc($size * 4);
+
+        @media (max-width: 768px) {
+          margin: $size * 1.5;
+        }
+
+        .section__title {
+          color: $title-colour;
+        }
+
+        .section__subtitle {
+          display: block;
+        }
       }
 
       h3,
@@ -109,5 +136,13 @@ html {
   textarea {
     font-family: $font-primary;
     font-size: $font-normal;
+  }
+}
+
+main {
+  margin: $size * 2;
+
+  @media (max-width: 768px) {
+    margin: $size;
   }
 }

@@ -5,7 +5,7 @@ import { faDownload, faComment } from "@fortawesome/free-solid-svg-icons";
 
 const HeroButtons = () => {
   return (
-    <div className="hero__buttons d-flex justify-content-center mb-3">
+    <div className="d-flex justify-content-center mb-3">
       <Button
         text="Download CV"
         icon={<FontAwesomeIcon icon={faDownload} />}

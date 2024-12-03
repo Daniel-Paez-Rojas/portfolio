@@ -7,7 +7,7 @@ const Home = () => {
   return (
     <article id="home">
       <Stack className="d-flex justify-content-center align-items-center">
-        <Row className="d-flex flex-column flex-lg-row align-items-stretch g-4 p-0 m-5 w-100">
+        <Row className="d-flex flex-column flex-lg-row align-items-stretch g-4 p-0 w-100">
           <Col
             sm={12}
             lg={6}

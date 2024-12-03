@@ -22,7 +22,7 @@ function AboutInfoCards() {
     {
       icon: <FontAwesomeIcon icon={faLifeRing} />,
       text: "Support",
-      subtext: "Coming soon"
+      subtext: "Soon"
     }
   ];
 
@@ -34,7 +34,7 @@ function AboutInfoCards() {
           icon={card.icon}
           text={card.text}
           subtext={card.subtext}
-          className="my-custom-card"
+          className="custom-card"
         />
       )}
     </div>

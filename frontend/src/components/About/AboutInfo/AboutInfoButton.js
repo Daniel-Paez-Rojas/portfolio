@@ -5,10 +5,9 @@ import { faDownload } from "@fortawesome/free-solid-svg-icons";
 
 function AboutInfoButton() {
   return (
-    <Button
-      text="Download CV"
-      icon={<FontAwesomeIcon icon={faDownload} />}
-    />
+    <div className="d-flex justify-content-center align-items-end">
+      <Button text="Download CV" icon={<FontAwesomeIcon icon={faDownload} />} />
+    </div>
   );
 }
 

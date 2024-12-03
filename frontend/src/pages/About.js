@@ -14,7 +14,7 @@ function About() {
   return (
     <article id="about">
       <AboutHeading />
-      <Stack>
+      <Stack id="about-content">
         <AboutImage />
         <AboutInfo />
       </Stack>
