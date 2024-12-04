@@ -106,6 +106,10 @@ html {
           margin: $size * 1.5;
         }
 
+        @media (max-width: 576px) {
+          margin: $size;
+        }
+
         .section__title {
           color: $title-colour;
         }
