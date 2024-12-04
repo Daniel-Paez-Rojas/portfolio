@@ -3,6 +3,7 @@ import { Container, Stack } from "react-bootstrap";
 import MainNavbar from "./components/Navbar";
 import Home from "./pages/Home";
 import About from "./pages/About";
+import Skills from "./pages/Skills";
 import useActiveSection from "./hooks/useActiveSection";
 
 function App() {
@@ -23,6 +24,7 @@ function App() {
         <main>
           <Home />
           <About />
+          <Skills />
         </main>
       </Container>
     </Stack>

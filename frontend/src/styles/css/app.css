@@ -299,3 +299,8 @@ header .navbar .navbar-collapse .navbar-nav {
     justify-self: center;
   }
 }
+
+#skills .skills-icons {
+  width: 48px;
+  height: 48px;
+}
