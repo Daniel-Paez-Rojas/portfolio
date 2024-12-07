@@ -99,7 +99,7 @@ html {
 
       .section__heading {
         text-align: center;
-
+        text-transform: capitalize;
         margin-bottom: calc($size * 4);
 
         @media (max-width: 768px) {

@@ -1,4 +1,5 @@
 import React from "react";
+import Card from "../components/Skills/Card";
 
 function Skills() {
   const skills = [
@@ -64,7 +65,6 @@ function Skills() {
           technologie: "Laravel",
           level: "basic"
         },
-        { url: "", alt_title: "", technologie: "", level: "" },
         {
           url: "https://img.icons8.com/color/48/sql.png",
           alt_title: "sql",
@@ -117,6 +117,12 @@ function Skills() {
           alt_title: "json--v1",
           technologie: "JSON",
           level: "intermediate"
+        },
+        {
+          url: "https://img.icons8.com/color/48/docker.png",
+          alt_title: "docker",
+          technologie: "Docker",
+          level: "intermediate"
         }
       ]
     },
@@ -124,14 +130,14 @@ function Skills() {
       category: "Languages",
       items: [
         {
-          url: "https://img.icons8.com/color/48/spain-2-circular.png",
-          alt_title: "spain-2-circular",
+          url: "https://img.icons8.com/color/48/spain2-circular.png",
+          alt_title: "spain2-circular",
           technologie: "Spanish",
           level: "Native"
         },
         {
-          url: "https://img.icons8.com/emoji/48/united-kingdom-emoji.png",
-          alt_title: "united-kingdom-emoji",
+          url: "https://img.icons8.com/color/48/great-britain-circular.png",
+          alt_title: "great-britain-circular",
           technologie: "English",
           level: "High"
         },
@@ -147,7 +153,6 @@ function Skills() {
           technologie: "German",
           level: "basic"
         },
-        ,
         {
           url: "https://img.icons8.com/color/48/japan-circular.png",
           alt_title: "japan-circular",
@@ -159,7 +164,16 @@ function Skills() {
   ];
   return (
     <article id="skills">
-      <img src="" alt="" className="skills-icons" />
+      <div className="section__heading">
+        <h2 className="section__title">Skills</h2>
+        <h3 className="section__subtitle">My tecnhincal level</h3>
+      </div>
+
+      <div id="categories">
+        {skills.map((category, index) =>
+          <Card key={index} category={category} items={category.items} />
+        )}
+      </div>
     </article>
   );
 }
